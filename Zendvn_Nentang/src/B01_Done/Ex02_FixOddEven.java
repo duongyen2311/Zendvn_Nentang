@@ -1,4 +1,4 @@
-package B01;
+package B01_Done;
 
 public class Ex02_FixOddEven {
 	public static void main(String[] args) {
@@ -8,7 +8,8 @@ public class Ex02_FixOddEven {
 
 		if (number < 0)
 			str1 = "âm";
-		//Bị bug trong trường hợp number < 0, nên cần thêm trị tuyệt đối
+		//Can them tri tuyet doi
+		//C2: if(number % 2 == 1||number % 2 ==-1)
 		if (Math.abs(number) % 2 == 1)
 			str2 = "lẻ";
 
