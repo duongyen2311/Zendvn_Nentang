@@ -6,22 +6,22 @@ public class Ex04_BMI {
 		int yourWeight = 84;
 		int yourHeight = 178;
 
-		double yourHeighInMeter = yourHeight / 100.0;
-		double bmi = yourWeight / (Math.pow(yourHeighInMeter, 2));
+		double yourHeighInMeter = (double) yourHeight / 100;
+		double bmi = yourWeight / (yourHeighInMeter * yourHeighInMeter);
 		double roundBmi = (double) Math.ceil(bmi * 10) / 10;
-		String result = "";
 
+		String result = "";
 		if (roundBmi >= 30) {
-			result = "BMI: " + roundBmi + " Beo phi";
+			result = " Beo phi";
 		} else if (roundBmi >= 25) {
-			result ="BMI: " + roundBmi + " Thua can";
+			result = " Thua can";
 		} else if (roundBmi >= 18.5) {
-			result ="BMI: " + roundBmi + " Binh thuong";
+			result = " Binh thuong";
 		} else {
-			result ="BMI: " + roundBmi + " Thieu can";
+			result = " Thieu can";
 		}
-		
-		System.out.println(result);
+
+		System.out.println("BMI: " + roundBmi + result);
 	}
 
 }

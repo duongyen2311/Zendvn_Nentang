@@ -3,6 +3,7 @@ package B02;
 public class Ex03_CountDigit {
 
 	public static void main(String[] args) {
+		// C1
 //		int yourNumber = 123456789;
 //		String one = "1";
 //		String zero = "";
@@ -15,16 +16,13 @@ public class Ex03_CountDigit {
 //			}
 //		}
 //		System.out.println(yourNumber + " co " + characterCounter + " chu so");
-//	}
-
+		// C2
 		// Java convert number to String
 		// Java count string length
-		//C2
+		// C2
 		int yourNumber = 12345678;
-		String strNumber = Integer.toString(yourNumber);
-		int characterCounter = strNumber.length();
+		int characterCounter = (yourNumber + "").length();
 		System.out.println(yourNumber + " co " + characterCounter + " chu so");
-		
-
 	}
+
 }
