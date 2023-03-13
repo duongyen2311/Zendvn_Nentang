@@ -10,6 +10,7 @@ public class Ex03_CheckExist {
 		for (int element : arrInt) {
 			if (element == number)
 				isExist = "Ton tai";
+
 		}
 		System.out.println(isExist);
 	}

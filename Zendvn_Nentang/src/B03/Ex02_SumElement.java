@@ -1,6 +1,7 @@
 package B03;
 
 public class Ex02_SumElement {
+
 	public static void main(String[] args) {
 		int[] arrInt = { 1, 2, 4, 8, 0 };
 		int sum = 0;

@@ -11,6 +11,7 @@ public class Ex04_CheckExistBySum {
 		for (int i = 0; i < length - 1; i++) {
 			if (arrInt[i] + arrInt[i + 1] == 5)
 				notice = "Success";
+
 		}
 		System.out.println(notice);
 	}
