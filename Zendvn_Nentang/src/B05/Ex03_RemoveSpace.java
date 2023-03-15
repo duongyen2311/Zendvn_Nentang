@@ -17,10 +17,10 @@ public class Ex03_RemoveSpace {
 		String str2 = "";
 		for (int i = 0; i < arrStr.length; i++) {
 			arrStr[i] = str.charAt(i);
-			if (arrStr[i] >= 97 && arrStr[i] <= 122) {
-				str2 += (arrStr[i] + "").toUpperCase();
-			} else {
+			if (Character.isUpperCase(arrStr[i]) == true) {
 				str2 += (arrStr[i] + "").toLowerCase();
+			} else {
+				str2 += (arrStr[i] + "").toUpperCase();
 			}
 		}
 		System.out.println(str2);
