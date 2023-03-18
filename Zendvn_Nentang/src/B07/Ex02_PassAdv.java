@@ -1,7 +1,6 @@
 package B07;
 
 public class Ex02_PassAdv {
-	
 	public static void main(String[] args) {
 		String input = "2c+)1o!@(*&!y@&chi&^c!@#o3co$23%%^nd$#$!uo5ng";
 		String key = input.replaceAll("\\D", "");

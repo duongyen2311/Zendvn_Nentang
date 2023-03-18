@@ -1,7 +1,6 @@
 package B07;
 
 public class Ex01_PassBasic {
-	
 	public static void main(String[] args) {
 		String str = "luutruonghailan";
 		String key = "3633";
