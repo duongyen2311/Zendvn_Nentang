@@ -18,6 +18,7 @@ public class Ex02_PassAdv {
 			String cap = word.substring(0, 1).toUpperCase() + word.substring(1);
 			result += cap + " ";
 		}
+		//Them trim de xoa space
 		System.out.println(result.trim());
 	}
 }
