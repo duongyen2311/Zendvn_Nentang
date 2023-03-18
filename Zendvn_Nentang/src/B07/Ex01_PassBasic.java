@@ -17,7 +17,7 @@ public class Ex01_PassBasic {
 			String cap = word.substring(0, 1).toUpperCase() + word.substring(1);
 			result += cap + " ";
 		}
-		System.out.println(result);
+		System.out.println(result.trim());
 
 	}
 
