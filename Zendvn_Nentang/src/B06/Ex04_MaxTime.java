@@ -8,10 +8,11 @@ public class Ex04_MaxTime {
 		int length = strArr.length;
 		int maxTime = Integer.parseInt(strArr[1]);
 		String name = strArr[0];
-		for (int i = 0; i < length; i++) {
+		for (int i = 3; i < length; i += 2) {
 			if (i % 2 == 1) {
-				if (Integer.parseInt(strArr[i]) > maxTime) {
-					maxTime = Integer.parseInt(strArr[i]);
+				int currentTime = Integer.parseInt(strArr[i]);
+				if (currentTime > maxTime) {
+					maxTime = currentTime;
 					name = strArr[i - 1];
 				}
 			}

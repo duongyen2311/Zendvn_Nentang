@@ -7,7 +7,7 @@ public class Ex01_Shape {
 		String symbol = "";
 		String leftNumber = "";
 		String centerNumber = "";
-
+		String record = "";
 		for (int line = 1; line <= height; line++) {
 			symbol = "-".repeat(height - line);
 			leftNumber = "";
@@ -17,8 +17,9 @@ public class Ex01_Shape {
 			StringBuilder rightNumber = new StringBuilder(leftNumber);
 			rightNumber.reverse().toString();
 			centerNumber = line + "";
-			shape = symbol + leftNumber + centerNumber + rightNumber + symbol;
-			System.out.println(shape);
+			record = symbol + leftNumber + centerNumber + rightNumber + symbol;
+			shape += record + "\n";
 		}
+		System.out.println(shape);
 	}
 }
