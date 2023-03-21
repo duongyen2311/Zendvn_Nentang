@@ -8,40 +8,27 @@ public class Ex02_StringAdv {
 		String[] inputCateArr = inputCategory.split("[|$]");
 		String[] inputCourseArr = inputCourse.split("[|=]");
 		String result = "";
-//		String cate = "";
-//		int courseNumber = 0;
-//		String course = "";
-//		C1
-//		for (int i = 0; i < inputCateArr.length; i++) {
-//			courseNumber = 0;
-//			course = "";
-//			if (i % 2 == 1) {
-//				cate = inputCateArr[i];
-//				for (int j = 0; j < inputCourseArr.length; j++) {
-//					if (inputCourseArr[j].equalsIgnoreCase(inputCateArr[i - 1])) {
-//						courseNumber++;
-//						course += ", " + inputCourseArr[j - 1];
-//					}
-//				}
-//				course = course.substring(1);
-//				System.out.printf("%s (%d): %s \n", cate, courseNumber, course);
-//			}
-//		}
-
+//		1.Lap trinh web (3) : HTML CSS, PHP, Laravel
+//		2.Lap trinh phan mem (2) : HTML CSS, PHP, Laravel, Winform, NodeJS
+//		3.Lap trinh di dong (1) : HTML CSS, PHP, Laravel, Winform, NodeJS, React Native
 		int index = 1;
+		String courseName = "";
+		int count = 0;
 		for (int i = 1; i < inputCateArr.length; i += 2) {
+			courseName = "";
+			count = 0;
 			String categoryId = inputCateArr[i - 1];
 			String categoryName = inputCateArr[i];
-			String record = index + "." + categoryName + ": ";
-
+			String record = index + "." + categoryName;
 			for (int j = 1; j < inputCourseArr.length; j += 3) {
 				if (inputCourseArr[j + 1].equals(categoryId)) {
-					record += inputCourseArr[j] + ", ";
+					courseName += inputCourseArr[j] + ", ";
+					count++;
 				}
 			}
 
-			record = record.substring(0, record.length() - 2);
-			result += record + "\n";
+			result += record + " (" + count + ") " + ": " + courseName;
+			result = result.substring(0, result.length() - 2) + "\n";
 			index++;
 		}
 		System.out.println(result);
